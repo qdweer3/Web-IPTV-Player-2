@@ -21,7 +21,7 @@
 					skinPath:"minimal_skin_dark",
 					displayType:"lightbox",
 					initializeOnlyWhenVisible:"no",
-					useVectorIcons:"no",
+					useVectorIcons:"yes",
 					fillEntireVideoScreen:"no",
 					fillEntireposterScreen:"yes",
 					goFullScreenOnButtonPlay:"no",
