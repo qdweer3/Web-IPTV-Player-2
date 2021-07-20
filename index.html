@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <body oncontextmenu="return false;"><script type="text/javascript" charset="UTF-8"></script>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Askbootstrap">
+      <meta name="author" content="TeLaSe">
+      <title>Player</title>
+      <!-- Favicon Icon -->
+      <link rel="icon" type="image/png" href="img/favicon.png">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css"  href="content/global.css"/>
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+		<script type="text/javascript" src="java/TLSVPlayer.js"></script>
+		
+		<!-- Setup video player-->
+		<script type="text/javascript" src="editedJS.js"></script>
+		
+	</head>
+
+	<body style="background-color:#999999; padding:0px; margin:0px;">	
+
+		<div id="myDiv"></div>
+		
+		<!--  Playlists -->
+			<ul id="playlists" style="display:none;">
+				<li data-source="playlist" data-playlist-name="Vip Vod" data-thumbnail-path="content/thumbnails/p-html.jpg">
+					<p class="telasevp-categories-title"><span class="telasevp-header">Title: </span><span class="telasevp-title">IPTV</span></p>
+					<p class="telasevp-categories-type"><span class="telasevp-header">Type: </span>IPTV Player</p>
+					<p class="telasevp-categories-description"><span class="telasevp-header">Description: </span>Created using <strong>PHP markup</strong>, all format are supported and it can have mixed video formats.</p>
+				</li>
+			</ul>
+
+			<!--  HTML playlist -->
+			<ul id="playlist" style="display:none;">
+				                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/dal1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">101 Dalmatians (1961)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/12slave.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">12 Years a Slave (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/fast2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">2 Fast 2 Furious (2003)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/20000LeaguesUndertheSea/20000_Leagues_Under_the_Sea_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">20000 Leagues Under the Sea (1916)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/28days.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">28 Days Later (2002)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/3ninja1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">3 Ninjas (1992)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/3ninja2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">3 Ninjas Kick Back (1994)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/3ninja3.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">3 Ninjas Knuckle Up (1995)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/3ninja4.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">3 Ninjas: High Noon at Mega Mountain (1998)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/43TheRichardPettyStory_201301/43TheRichardPettyStory.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">43 - The Richard Petty Story (1974)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/47ronin.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">47 Ronin (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/ABoyAndHisDog1975/A_Boy_and_His_Dog.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Boy and His Dog (1975)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/acc2009.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Christmas Carol (2009)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/disneyc1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Disney Christmas Gift (1983)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/haunted2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Haunted House 2 (2014)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/roxbury.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Night at the Roxbury (1998)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/elm1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Nightmare on Elm Street (1984)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/elm2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Nightmare on Elm Street 2 - Freddy's Revenge (1985)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/elm3.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Nightmare on Elm Street 3 - Dream Warriors (1987)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/elm4.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Nightmare on Elm Street 4 - The Dream Master (1988)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/elm5.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Nightmare on Elm Street 5 - The Dream Child (1989)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/AStarIsBorn/AStarIsBorn_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">A Star Is Born (1937)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/abraham_lincoln/abraham_lincoln_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Abraham Lincoln (1930)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/afflicted2013.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Afflicted (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/after.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">After Earth (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/AgainstACrookedSky/AgainstACrookedSky_title_2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Against a Crooked Sky (1976)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/AKIRA_201403/AKIRA.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Akira (1988)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/ali1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Ali (2001)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GodzillasRevenge/Godzilla%27s%20Revenge.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">All Monsters Attack (1969)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/AlltheKindStrangers/AlltheKindStrangers_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">All the Kind Strangers (1974)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/AlmostChristmas20161080pRemux/Almost%20Christmas%20(2016)'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Almost Christmas (2016)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/AlteredStatesKenRussell1980AngeeParaZoowoman.website/Altered%20States%20%28Ken%20Russell%2C%201980%29_angee_para%20zoowoman.website.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Altered States (1980)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/agangster.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">American Gangster (2007)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/hustle2013.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">American Hustle (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/anchorman2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Anchorman 2: The Legend Continues (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/anchorman.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Anchorman: The Legend of Ron Burgundy (2004)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Animalympics_201704/Animalympics.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Animalympics (1980)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://cdnvod.setv.ca/hls/Annabelle.2.Creation.2017.720p.BluRay.H264.AAC-RARBG.mp4/master.m3u8'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Annabelle: Creation (2017)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/ApacheBlood/Apache_Blood_256kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Apache Blood (1975)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Arnold1973FullMovie/Arnold%20(1973)'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Arnold (1973)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Assignment_Outer_Space/Assignment_Outer_Space_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Assignment Outer Space (1960)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/AtlasInTheLandOfTheCyclops/Atlas%20in%20the%20Land%20of%20the%20Cyclops.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Atlas Against the Cyclops (1961)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Attack_From_Space/Attack_From_Space_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Attack From Space (1959)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/austin1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Austin Powers: International Man of Mystery (1997)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/austin2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Austin Powers: The Spy Who Shagged Me (1999)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://deadlyblogger.com/NewRelease/avengers2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Avengers: Age of Ultron (2015)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/badboys1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Bad Boys (1995)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/badboys2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Bad Boys II (2003)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/badgrandpa2013.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Bad Grandpa (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/BadSanta22016UNRATED1080pRemux/Bad%20Santa%202%20(2016)'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Bad Santa 2 (2016)*</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/badwords.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Bad Words (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Bugs_Bunny_Collection/Bah%2C%20Humduck%21%20-%20A%20Looney%20Tunes%20Christmas%20(2006)'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Bah Humduck! - A Looney Tunes Christmas (2006)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/blockin.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Baller Blockin' (2000)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/BattleBeyondTheStars1980/Battle%20Beyond%20The%20Stars%20%281980%29.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Battle Beyond the Stars (1980)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/apes5.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Battle for the Planet of the Apes (1973)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/BattleInOuterSpace/Battle%20In%20Outer%20Space.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Battle in Outer Space (1959)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/BattleOfBloodIslandSmaller/Battle%20of%20Blood%20Island%20smaller.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Battle of Blood Island (1960)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/BattleOfTheWorldsWidesceen/Battle%20of%20the%20Worlds%20NTSC_1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Battle Of The Worlds (1961)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/battleyear2013.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Battle of the Year (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/01BattleRoyaleSpecialEdition/01%20-%20Battle%20Royale%20-%20Special%20Edition.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Battle Royale (2000) [EN-Subs]</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/01BattleRoyaleSpecialEdition/02%20-%20Battle%20Royale%20II%20-%20Requiem.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Battle Royale II - Requiem (2003)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/belly1998.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Belly (1998)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/apes2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Beneath the Planet of the Apes (1970)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/BetwHurr/BETWEEN-HURRICANES_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Between Hurricanes (2005)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/bewitched.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Bewitched (2005)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Big Buck Bunny (2008)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/blade1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Blade (1998)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/blade2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Blade II (2002)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/blade3.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Blade: Trinity (2004)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/glory.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Blades of Glory (2007)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/blood.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Blood In Blood Out (1993)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/BloodyPitOfHorror/BloodyPitOfHorror.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Bloody Pit of Horror (1965)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/bodyheat1981.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Body Heat (1981)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/BorntoWin/BorntoWin_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Born to Win (1971)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/thehood.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Boyz n the Hood (1991)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/brideless_groom/brideless_groom_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Brideless Groom (1947)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/BuckWild2013720p/Buck.Wild.2013.720p.BluRay.x264.YIFY.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Buck Wild (2014)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Bugs_Bunny_Collection/Bugs%20Bunny%20-%20Bugs%20Bunny%20Road%20Runner%20Movie%20(1979)'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Bugs Bunny Road Runner Movie (1979)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/cabin1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Cabin by the Lake (2000)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Comicweb-CaptainAmericaChapter1/Comicweb-CaptainAmericaChapter1ThePupleDeath_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Captain America (1944)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://deadlyblogger.com/NewRelease/captain2016.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Captain America: Civil War (2016)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://deadlyblogger.com/NewRelease/wintersoldier.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Captain America: The Winter Soldier (2014)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/captain_calamity/captain_calamity_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Captain Calamity (1936)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/CaptainKidd_/CaptainKidd_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Captain Kidd (1945)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/carrie1976.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Carrie (1976)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/carrie2013.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Carrie (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Kickay.blogspot.com_Carrie.2013.HD.1080p_201401/%5Bkickay.blogspot.com%5D%20Carrie%202013%20HD%201080p.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Carrie (2013)*</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/ChiaroscuroBaby/ChiaroscuroBaby-1280x720_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Chiaroscuro Baby (2009)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/childsplay1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Child's Play (1988)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/childsplay2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Child's Play 2 (1990)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/childsplay3.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Child's Play 3 (1991)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/ChildrenOfMen20061080pX26510bitJoy/Children%20of%20Men%202006%20(1080p%20x265%2010bit%20Joy)'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Children of Men (2006)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/corn1984.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Children of the Corn (1984)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/corn6.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Children of the Corn 666: Isaac's Return (1999)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/corn2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Children of the Corn II: The Final Sacrifice (1992)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/corn3.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Children of the Corn III: Urban Harvest (1995)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/corn4.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Children of the Corn: The Gathering (1996)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/cinder1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Cinderella (1950)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/classact.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Class Act (1992)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/cold_sweat.avi/Cold_Sweat_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Cold Sweat (1970)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/colors.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Colors (1988)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://ia601501.us.archive.org/22/items/LaMaravillasDeLaVida201702/LaMaravillasDeLaVida2017_02.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Colossal (2016)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/ColossusTheAmazonQueen/Colossus%20&%20the%20Amazon%20Queen.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Colossus and the Amazon Queen (1960)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/ColossusAndTheHeadhunters/Colossus%20and%20the%20Headhunters.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Colossus and the Headhunters (1963)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="https://www.rockinrudys.com/wp-content/uploads/2020/10/coming-soon.jpg" data-video-source="[{source:'https://github.com/bitsbb01/IPTV-M3US/raw/master/ofcvideos.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Coming Soon To OFC VIP Movies</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/ConcreteCowboys/ConcreteCowboys_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Concrete Cowboys (1979)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/congo1995.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Congo (1995)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/apes4.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Conquest of the Planet of the Apes (1972)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/PublicDomainJadranPicturesandJoniaPicturesConstantineandtheCross1962/Constantine_and_the_Cross_256kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Constantine and the Cross (1962)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/crimson.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Crimson Tide (1995)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/cujo.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Cujo (1983)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/CurseOfBigfoot_MPEG/Curse%20of%20Bigfoot.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Curse of Bigfoot (1975)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Cyrano_DeBergerac/Cyrano_De_Bergerac_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Cyrano De Bergerac (1950)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/doa_1949/doa_1949_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">D.O.A. (1949)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/mighty2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">D2: The Mighty Ducks (1994)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/mighty3.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">D3: The Mighty Ducks (1996)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Bugs_Bunny_Collection/Daffy%20Duck%27s%20Quackbusters%20(1988)'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Daffy Duck's Quackbusters (1988)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/ElDamnationoAlleyo1977/El%20Damnationo%20Alleyo%201977.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Damnation Alley (1977)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/minds.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dangerous Minds (1995)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DavidandGoliath1960/DavidandGoliath1960_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">David and Goliath (1960)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/deadp.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dead Presidents (1995)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Deadwood76/Deadwood_76_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Deadwood '76 (1965)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DeathMachines/DeathMachines.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Death Machines (1976)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DeathRidesAHorse/DeathRidesAHorse1967_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Death Rides A Horse (1967)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DeepRed1975/DeepRed_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Deep Red (1975)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DefendersOfSpace/Defenders_of_space_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Defenders of Space (1984)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/dejavu.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Deja Vu (2006)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DeliveranceMovie/Deliverance.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Deliverance (1972)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/deliveryman.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Delivery Man (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DestroyAllMonsters_201611/Destroy%20All%20Monsters.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Destroy All Monsters (1968)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/dirty1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dirty (2005)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/dirtydancing1987.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dirty Dancing (1987)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/dirtydancing2004.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dirty Dancing - Havana Nights (2004)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/dishonored_lady/dishonored_lady_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dishonored Lady (1947)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://deadlyblogger.com/NewRelease/strange2016.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Doctor Strange (2016)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/PhantasmagoriaTheater-DoctorX1932737/PhantasmagoriaTheater-DoctorX1932737_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Doctor X (1932)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/dogma1999.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dogma (1999)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/menace.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Don't Be a Menace to South Central While Drinking Your Juice in the Hood (1996)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/babysitter1991.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Don't Tell Mom the Babysitter's Dead (1991)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DoomsdayMachine1972/DoomsdayMachine1972_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Doomsday Machine (1972)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Dr.Sex/Dr.Sex.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dr. Sex (1964)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://deadlyblogger.com/NewRelease/dracula.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dracula Untold (2014)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DragonBallZFusionTheLastSaiyanVHS/Dragon%20Ball%20Z%20Fusion%20The%20Last%20Saiyan%20VHS.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dragon Ball Z: Fusion - Last Saiyan (2002)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/dressed_to_kill/dressed_to_kill_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dressed To Kill (1946)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DrillerKiller1979/Driller-killer_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Driller Killer (1979)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/DrumsInTheDeepSouth/Drums_in_the_Deep_South_256kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Drums in the Deep South (1951)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/ducktales1990.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">DuckTales the Movie: Treasure of the Lost Lamp (1990)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/StepUp20061080pX264SciencefunMux/Scelta%20D.Amore%20-%20Dying%20Young%20%281991%29%201080p%20x264%20%5bSciencefun%20Mux%5d.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Dying Young (1991)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/ElephantsDream/ed_hd_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Elephants Dream (2006)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/elf1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Elf (2003)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/empirestate.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Empire State (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/epic1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Epic (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Escape_From_Sobibor.avi/Escape_from_Sobibor_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Escape From Sobibor (1987)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/apes3.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Escape from the Planet of the Apes (1971)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/13Fantasmas2001720pDubladoAlan680/A.Fuga.do.Planeta.dos.Macacos.1971.1080p-WOLVERDONFILMES.COM.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Escape from the Planet of the Apes (1971)*</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/escapeplan2013.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Escape Plan (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/mustgo.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Everything Must Go (2010)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/fallen2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Fallen (1998)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/fast4.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Fast & Furious (2009)*</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/fast5.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Fast Five (2011)*</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/nemo2003.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Finding Nemo (2003)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/FirstSpaceshipOnVenusMPEG/First_Spaceship_On_Venus_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">First Spaceship on Venus (1960)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Five_Minutes_To_Live.avi/Five_Minutes_to_Live_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Five Minutes To Live (1961)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/FlashGordon/FlashGordon.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Flash Gordon (1980)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/flight1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Flight (2012)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/flubber.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Flubber (1997)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/LE_ORME/LE%20ORME.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Footprints on the Moon (1975)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/fourb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Four Brothers (2005)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Francesco1989_466/Francesco-1989-Clip_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Francesco (1989)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/elm6.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Freddy's Dead: The Final Nightmare (1991)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/freebirds2013.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Free Birds (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/FreeFall2014720p/Free%20Fall%20(2014)'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Free Fall (2014)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/friday1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Friday (1995)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/friday3.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Friday After Next (2002)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/friday1980.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Friday the 13th (1980)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/snowman1969.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Frosty The Snowman (1969)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/disneyfrozen.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Frozen (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://bobmovies.net/hl/Frozen.2013.m3u8'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Frozen (2013)*</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/fast6.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Furious 6 (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/FuryOfAchilles/Fury%20of%20Achilles.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Fury of Achilles (1962)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/1972FuryOfTheWolfmanWPaulNaschy/['}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Fury of the Wolfman (1972)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GameraVs.Gyaos/Gamera%20Vs.%20Gyaos.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Gamera vs. Gyaos (1967)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Destroy_All_Planets/Destroy_All_Planets_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Gamera vs. Viras (1968)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GameraTheGuardianOfTheUniverse/Gamera%20-%20The%20Guardian%20Of%20The%20Universe.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Gamera: Guardian of the Universe (1995)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/MonsterFromAPrehistoricPlanet/Monster%20from%20a%20Prehistoric%20Planet.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Gappa: The Triphibian Monster (1967)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Gattaca/Gattaca.1997.1080p.BrRip.x264.bitloks.YIFY.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Gattaca (1997)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://deadlyblogger.com/NewRelease/getonup.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Get on Up (2014)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GhostsontheLoose/GhostsontheLoose_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Ghosts on the Loose (1943)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GodzillaAgainstMechagodzilla_201703/Godzilla%20Against%20Mechagodzilla.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Godzilla Against Mechagodzilla (2002)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GodzillaAndMothraTheBattleForEarth/Godzilla%20And%20Mothra%20The%20Battle%20For%20Earth.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Godzilla and Mothra: The Battle for Earth (1992)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GigantisTheFireMonster_201611/Gigantis%2C%20The%20Fire%20Monster.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Godzilla Raids Again (1955)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GodzillaVsGigan/Godzilla%20Vs%20Gigan.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Godzilla vs. Gigan (1972)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GodzillaVs.Megalon/Godzilla%20Vs.%20Megalon.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Godzilla vs. Megalon (1973)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GodzillaVs.TheSeaMonster/Godzilla%20Vs.%20The%20Sea%20Monster.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Godzilla vs. the Sea Monster (1966)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GodzillaFinalWars/Godzilla%20Final%20Wars.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Godzilla: Final Wars (2004)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GodzillaMonsterPlanet/Godzilla%20Monster%20Planet.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Godzilla: Planet of the Monsters (2017)*</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GonewiththeWest/GonewiththeWest_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Gone with the West (1975)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Grave_of_the_Vampire_movie/Grave-of-the-Vampire_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Grave of the Vampire (1972)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GreatExpectations1946/GreatExpectations1946_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Great Expectations (1946)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/grown1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Grown Ups (2010)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/grown2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Grown Ups 2 (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/grudgematch.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Grudge Match (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://deadlyblogger.com/NewRelease/guardians2014.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Guardians of the Galaxy (2014)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/GulliversTravels720p_652/GulliversTravels_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Gulliver's Travels (1939)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/HarryAndTheHendersons/Harry%20and%20the%20Hendersons.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Harry and the Hendersons (1987)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/He_Walked_By_Night.avi/He_Walked_By_Night_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">He Walked By Night (1948)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/hercules_against_the_moon_men_1964/Hercules_Against_the_Moon_Men_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Hercules Against the Moon Men (1964)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/cco__HerculesandtheCaptiveWomen/cco_herculesandthecaptivewomen_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Hercules and the Captive Women (1961)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Hercules_and_the_Tyrants_of_Babylon/Hercules_and_the_Tyrants_of_Babylon_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Hercules and the Tyrants of Babylon (1964)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/SonofHerculesTheLandofDarkness/SonofHerculesTheLandofDarkness_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Hercules the Invincible (1964)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/HerculesUnchained/Hercules_Unchained_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Hercules Unchained (1959)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/HereComesTrouble1948/Here-Comes-Trouble-1948.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Here Comes Trouble (1948)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/HighRisk/High_Risk_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">High Risk (1981)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/hocuspocus.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Hocus Pocus (1993)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Home2009/Home2009_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Home (2009)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Home.2015.720p.YIFYTopArchive.IR/Home.2015.720p.YIFY_TopArchive.IR.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Home (2015)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/homealone1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Home Alone (1990)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/homealone2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Home Alone 2: Lost in New York (1992)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/homealone3.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Home Alone 3 (1997)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/homealone4.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Home Alone 4 (2002)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/StepUp20061080pX264SciencefunMux/Honey%20%282003%29%201080p%20x264%20%5bSciencefun%20Mux%5d.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Honey (2003)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/hook1991.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Hook (1991)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/Horror_Express_WebM/horror_express_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Horror Express (1972)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/hotfuzz.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Hot Fuzz (2007)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/hottub2010.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Hot Tub Time Machine (2010)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/The_House_On_Haunted_Hill/The_House_On_Haunted_Hill_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">House on Haunted Hill (1959)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/grinch2000.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">How the Grinch Stole Christmas (2000)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/iaml.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">I Am Legend (2007)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/IDreamOfJeannieWithTheLightBrownHair/IDreamOfJeannieWithTheLightBrownHair_1940_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">I Dream of Jeanie (1952)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/irobot.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">I Robot (2004)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/idaho-transfer-1973-sci-fi/idaho-transfer-1973-sci-fi.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Idaho Transfer (1973)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/identitythief.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Identity Thief (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/WarOfTheWildcats-JohnWayne1943/JohnWayne-WarOfTheWildcats1943_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">In Old Oklahoma (1943)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/In_The_Year_2889/In_The_Year_2889_1967.avi_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">In The Year 2889 (1967)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/deep1999.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">In Too Deep (1999)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/indep.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Independence Day (1996)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'https://archive.org/download/insecurity/Insecurity_512kb.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Insecurity (2007)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/insideman.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Inside Man (2006)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/insidious1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Insidious (2010)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/insidious2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Insidious - Chapter 2 (2013)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/ironman1.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Iron Man (2008)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/ironman2.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Iron Man 2 (2010)</p>
+						</div>
+					</div>
+				</li>
+                <li data-thumb-source="img/vipvod.jpg" data-video-source="[{source:'http://www.deadlyblogger.com/NewRelease/ironman3.mp4'}]">	
+				<div data-video-short-description="">
+						<div>
+							<p class="telasevp-thumbnail-title">Iron Man 3 (2013)</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+	 <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top">
+         &nbsp;&nbsp;
+         <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
+         <i class="fas fa-bars"></i>
+         </button> &nbsp;&nbsp;
+        <a class="navbar-brand mr-1" href="index.php"><img class="img-fluid" alt="" src="img/home.png"  width="20" height="20"></a>
+          <!--Navbar Search -->
+         <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
+            <div class="input-group">
+
+               <div class="input-group-append">
+
+                  </button>
+               </div>
+            </div>
+         </div>
+         <!-- Navbar -->
+         <ul class="navbar-nav ml-auto ml-md-10 osahan-right-navbar">
+            <li class="nav-item mx-1">
+            </li>
+         </ul>
+      </nav>
+      <div id="wrapper">
+          <div id="lists">
+         <!-- Sidebar -->
+         <ul id="list" class="sidebar navbar-nav list">
+		    <li class="nav-item"><a class="channel nav-link" onclick="window['player1'].showLightbox()">Open Last Player</a></li>
+		 	<li class="nav-item"><a class="channel nav-link" href=turkey.html>Turkey</a></li>			
+			<li class="nav-item"><a class="channel nav-link" href=arabic.html>Arabic</a></li>
+			<li class="nav-item"><a class="channel nav-link" href=xxx.html>Adult Vod</a></li>
+        </ul>
+         </div>
+
+	</body>
+</html>
