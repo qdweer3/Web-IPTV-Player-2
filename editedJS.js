@@ -175,7 +175,7 @@
 					mainLabelsColor:"#FFFFFF",
 					secondaryLabelsColor:"#a1a1a1",
 					shareAndEmbedTextColor:"#5a5a5a",
-					inputBackgroundColor:"#FFFFFF",
+					inputBackgroundColor:"#000000",
 					inputColor:"#FFFFFF",
 					//login
 		            playIfLoggedIn:"no",
